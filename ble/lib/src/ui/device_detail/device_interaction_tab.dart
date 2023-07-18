@@ -209,6 +209,32 @@ class DeviceInteractionState extends State<DeviceInteraction> {
         [value]);
   }
 
+  initSend1805(BleDeviceInteractor bleDeviceInteractor) async {
+    // 獲取當前時間
+    DateTime now = DateTime.now();
+
+    // 轉換年份至十六進制並轉換為對應的十進制
+    int year = now.year - 2000;
+    List<int> hexYear = [year ~/ 16 + 0xe0, year % 16];
+
+    // 提取並轉換其餘的時間成分
+    List<int> values = [
+      ...hexYear,
+      now.month,
+      now.day,
+      now.hour,
+      now.minute,
+      now.second
+    ];
+
+    bleDeviceInteractor.writeCharacterisiticWithResponse(
+        QualifiedCharacteristic(
+            characteristicId: Uuid.parse('2a2b'),
+            serviceId: Uuid.parse('1805'),
+            deviceId: widget.device.id),
+        values);
+  }
+
   Future<void> initRead1080f(BleDeviceInteractor bleDeviceInteractor) async {
     List<int> electricity = await bleDeviceInteractor.readCharacteristic(
       QualifiedCharacteristic(
@@ -399,6 +425,7 @@ class DeviceInteractionState extends State<DeviceInteraction> {
         if (initStatus) {
           initReadffc3(serviceDiscoverer);
           initSendFF10(serviceDiscoverer, ff10Type);
+          initSend1805(serviceDiscoverer); //setting time.
           initRead1080f(serviceDiscoverer);
           subscribeCharacteristic180f(serviceDiscoverer);
           subscribeCharacteristic1601(serviceDiscoverer);

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/user/Documents/fluttere_code/ble_student/ble/build/url_launcher_android/intermediates/merged_res/debug/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "C:\\code\\ble_student\\ble\\build\\url_launcher_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-3/348f6d52d990d4fb4fcc5abc17a1cdcd/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\icetz\\.gradle\\caches\\transforms-3\\348f6d52d990d4fb4fcc5abc17a1cdcd\\transformed\\core-1.6.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/user/Documents/fluttere_code/ble_student/ble/build/url_launcher_android/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "C:\\code\\ble_student\\ble\\build\\url_launcher_android\\intermediates\\merged_res\\debug\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "/Users/user/.gradle/caches/transforms-3/348f6d52d990d4fb4fcc5abc17a1cdcd/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "C:\\Users\\icetz\\.gradle\\caches\\transforms-3\\348f6d52d990d4fb4fcc5abc17a1cdcd\\transformed\\core-1.6.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
