@@ -29,7 +29,7 @@
             android:usesPermissionFlags="neverForLocation" />
 
     <application
-        android:label="BLE"
+        android:label="Lapita Tools"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name="com.signify.hue.reactivebleexample.MainActivity"

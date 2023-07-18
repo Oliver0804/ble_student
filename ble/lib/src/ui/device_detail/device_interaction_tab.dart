@@ -212,10 +212,14 @@ class DeviceInteractionState extends State<DeviceInteraction> {
   initSend1805(BleDeviceInteractor bleDeviceInteractor) async {
     // 獲取當前時間
     DateTime now = DateTime.now();
+    //打印now
+    print("now = $now");
 
-    // 轉換年份至十六進制並轉換為對應的十進制
-    int year = now.year - 2000;
-    List<int> hexYear = [year ~/ 16 + 0xe0, year % 16];
+    // 將整個年份轉換為十六進制並轉換為對應的十進制
+    //2023 => 0xe7, 0x07
+    List<int> hexYear = [now.year % 256, now.year ~/ 256];
+    //打印hexYear
+    print("hexYear = $hexYear");
 
     // 提取並轉換其餘的時間成分
     List<int> values = [
@@ -226,7 +230,7 @@ class DeviceInteractionState extends State<DeviceInteraction> {
       now.minute,
       now.second
     ];
-
+    print("values = $values");
     bleDeviceInteractor.writeCharacterisiticWithResponse(
         QualifiedCharacteristic(
             characteristicId: Uuid.parse('2a2b'),

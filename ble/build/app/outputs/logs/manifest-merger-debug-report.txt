@@ -139,7 +139,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ic
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\icetz\.gradle\caches\transforms-3\3287ed4cf8c32398866b0c1d2a55edb7\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:32:9-28
+		ADDED from C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:32:9-37
 	android:icon
 		ADDED from C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:33:9-43
 activity#com.signify.hue.reactivebleexample.MainActivity

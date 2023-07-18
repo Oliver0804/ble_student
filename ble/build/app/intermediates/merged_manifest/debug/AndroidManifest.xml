@@ -44,7 +44,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="BLE" >
+        android:label="Lapita Tools" >
         <activity
             android:name="com.signify.hue.reactivebleexample.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"

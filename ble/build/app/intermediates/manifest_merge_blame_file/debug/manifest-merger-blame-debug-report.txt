@@ -81,8 +81,8 @@
 45        android:debuggable="true"
 46        android:icon="@mipmap/ic_launcher"
 46-->C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:33:9-43
-47        android:label="BLE" >
-47-->C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:32:9-28
+47        android:label="Lapita Tools" >
+47-->C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:32:9-37
 48        <activity
 48-->C:\code\ble_student\ble\android\app\src\main\AndroidManifest.xml:34:9-47:20
 49            android:name="com.signify.hue.reactivebleexample.MainActivity"
